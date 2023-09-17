@@ -1,21 +1,20 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <Welcome msg="Do you like potato?"/>
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <h2>warns you if a dish contains potatoes</h2>
   </main>
 </template>
+
+
+<script setup>
+import Welcome from "@/views/Welcome.vue";
+</script>
+
 
 <style scoped>
 header {
